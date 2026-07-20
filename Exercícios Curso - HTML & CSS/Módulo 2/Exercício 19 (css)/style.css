@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body{
+background-color: rgb(144, 226, 144);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+color: rgb(1, 85, 1);
+
+}
+
+h1#t1{ 
+color:white;
+background-color:  rgb(1, 85, 1);;
+text-align:center;
+
+}
+
+h2{
+color: rgb(9, 218, 9);
+font-style: italic;
+font-weight: normal;
+}
+
+.basico{
+color: rgb(9, 218, 9);
+
+
+}
+
+.intermediario{
+color: darkgoldenrod;
+
+}
+
+.avançado{
+color:red;
+    
+}
+
+.destaque{
+background-color: rgb(210, 210, 55);
+font-weight: lighter;
+}
+
+.destaque:hover{
+background-color: black;
+
+}
+
+.detaque::after{
+    
+content:"←";
+}
+
+#teste{
+font-weight: bolder;
+
+}
+
+p{
+text-align:justify;
+
+}
+
+.texto1{
+color:rgb(5, 61, 5);
+background-color: white;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.texto1:hover{
+background-color: black;
+color:white;
+}
+
+
+
+
+a{
+text-decoration: none;
+color: red;
+
+}
+
+a:hover{
+color: white;
+background-color: black;
+border-radius: 20px;
+
+}
+
+a::before{
+content: "→";
+}
+
+a::after{
+content: "←";
+}
+

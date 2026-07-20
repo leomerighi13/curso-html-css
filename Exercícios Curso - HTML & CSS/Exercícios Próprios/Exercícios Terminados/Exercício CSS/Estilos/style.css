@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+
+@font-face {
+    font-family: romantic;
+    src: url("../Fontes/romantic.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;  
+    }
+
+    @font-face {
+        font-family: positions;
+        src: url("../Fontes/positions.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: willg;
+        src: url("../Fontes/willg.TTF") format("truetype");
+    }
+
+
+
+main{
+    background-image: linear-gradient(60deg, rgb(139, 8, 8), rgb(226, 81, 9), rgb(237, 206, 9));
+}
+
+
+
+
+h1{
+    padding: 5px;
+    margin: auto;
+   font-family: positions;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 5em;
+   text-align: center;
+
+
+
+}
+
+h2{
+    line-height: 4.0;
+    padding: 20px;
+    margin: auto;
+    color:rgba(240, 8, 4, 0.962);
+   font-family: willg;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 2.5em;
+   text-align: center;
+
+}
+
+h3{
+line-height:2.0;
+margin:auto;
+font-family: 'Times New Roman', Times, serif;
+font-style:italic;
+font-size: 1.5em;
+text-align: center;
+
+}
+
+p{
+
+margin-top:auto;
+font-family:Arial, Helvetica, sans-serif;
+font-style:normal;
+font-size: 1em;
+text-align: justify;
+text-indent:30px;
+
+}
+
+a{
+display:block;
+width:max-content;
+margin: auto;
+font-family: "Doto", sans-serif;
+font-weight: bolder;
+color:black;
+text-decoration: none;
+
+}
+
+img{
+    display:block;
+    margin-bottom:20px;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:15px;
+    box-shadow: 10px 10px 15px black;
+
+}
+
+audio{
+    display: block;
+    margin: 20px auto; /* 20px de espaço acima/abaixo e centralizado nas laterais */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 30px; /* Mantém as bordas da sombra arredondadas como o player */
+}

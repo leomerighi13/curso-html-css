@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+:root{
+--cor1:#3C1E66;  /*cor de fundo caixa maior */
+--cor2:#241933; /* cor de fundo caixa menor*/
+--cor3:#A78DCC; /*cor de fundo do texto */
+--cor4:#D4B5FF; /* cor de fundo do body */
+--fonte1: 'Arial'; /* fonte do texto */
+--fonte2: 'Times New Roman'; /* fonte do título h1 */
+--fonte3: 'serif'; /* fonte do título h2 */
+}
+
+body{
+background-color: var(--cor4);
+
+}
+
+h1{
+height:fit-content;
+width:fit-content;
+background-color: var(--cor1);
+font-family: var(--fonte2);
+color: white;
+padding: 10px;
+margin: auto;
+border: 5px solid whitesmoke;
+box-shadow:inset 2px 3px 2px 1px;
+text-shadow: 1px 2px 1px 1px;
+text-align: center;
+}
+
+h2{
+background-color: var(--cor2);
+font-family: var(--fonte3);
+color: white;
+padding: 5px;
+margin: auto;
+border: 5px solid whitesmoke;
+box-shadow:inset 2px 3px 2px 1px;
+text-shadow: 1px 2px 1px 1px;
+}
+
+p{
+background-color: var(--cor3);
+font-family: var(--fonte1);
+padding: 10px;
+color: white;
+box-shadow:inset 2px 3px 2px 1px;
+}

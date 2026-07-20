@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        div{
+        border: 5px solid black;
+        padding: 10px 5px;
+        outline: 10px solid rgb(78, 207, 78);
+        }
+        div > p{
+        display:none;
+
+        }
+
+        div:hover > p{
+        display:block;
+        background-color: rgb(3, 61, 3);
+        color:rgb(0, 255, 0);
+
+
+        }
+
+        #divi1 > p{
+            display:block;
+        
+        }
+
+
+        h1{
+        text-align: center;
+        font-family:fantasy;
+        font-size:4em;
+
+       
+        
+        }
+        h1#final:hover{
+        background-color: aliceblue;
+        padding: 30px 40px;
+        border: 15px solid darkred;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px black;
+        
+
+
+
+        }
+
+
+
+        h2{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        }
+
+        h3{
+        font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        h3.t1{
+        background-color: rgb(3, 61, 3);
+        color:azure;
+        font: normal bold 3em Courier;
+        padding: 50px 50px;
+        border: 5px solid black;
+        margin: 20px 30px 20px 30px;
+        text-align: center;
+        text-decoration: underline;
+
+        }
+        h3.t2{
+        background-color: rgb(12, 226, 12);
+        color:rgb(0, 0, 0);
+        font: normal bold 3em Courier;
+        padding: 25px 25px;
+        border: 5px solid black;
+        margin: 50px 30px 20px 30px;
+        text-align: center;
+        text-decoration: underline;
+
+
+        }
+
+        h3#hsb1{
+        color:rgb(237, 237, 237);
+        display:block;
+        content: " ←  [LINK]";
+        }
+
+        h3#hsb1:hover::after{
+        color:rgb(107, 2, 2);
+        display:inline-block;
+        content: " ←  [LINK]";
+        }
+
+        
+
+
+        p{
+        background-color: black;
+        color: beige;
+        font-size: 1.5em;
+
+
+
+        }
+
+
+
+
+
+       
+        
+
+
+       
+
+
+
+
+    </style>
+</head>
+<body>
+        <div>
+            <h1 id="final">Título 1</h1>
+            <h2>Título subjascente 1</h2>
+            <h3 class="t1">Subtítulo 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt animi. Architecto, exercitationem placeat expedita enim similique vel odio tempore dolorum illo inventore sequi necessitatibus quia consectetur, consequuntur sint voluptates!</p>
+            <h3 class="t2">subtítulo 2</h3>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia eligendi distinctio, ut atque laboriosam voluptatem quisquam nam non itaque et quas voluptates quis officiis maiores voluptatibus facere iure molestias nulla!
+            </p>
+            
+        </div>
+
+        <div>
+            <h1>Título 2</h1>
+            <h2>Título subsjascente 2</h2>
+            <a href="https://docs.google.com/document/d/17RmIg6tRgINcf5Yj4H58vkXd8FO9ev7HyIpJCQAzRqU/edit?pli=1&tab=t.0" target="_blank" rel="external"><h3 class="t1" id="hsb1">subtítulo 1</h3></a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis eveniet asperiores, porro maxime, numquam libero repellendus nihil perferendis id ullam molestiae. Fuga asperiores, consectetur cum beatae quae excepturi deserunt ea.</p>
+            <h3 class="t2">subtítulo 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ab eum modi repellendus fugit doloremque voluptatibus. Facilis alias dolor, expedita voluptatibus debitis quidem quia omnis minus, eaque ipsa, optio aperiam?</p>
+            
+
+
+
+
+
+
+
+        </div>
+        <div id="divi1">
+            <h1>Título 3</h1>
+            <h2>Título subjascente 3</h2>
+            <h3 class="t1">Subtítulo 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt animi. Architecto, exercitationem placeat expedita enim similique vel odio tempore dolorum illo inventore sequi necessitatibus quia consectetur, consequuntur sint voluptates!</p>
+            <h3 class="t2">subtítulo 2</h3>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia eligendi distinctio, ut atque laboriosam voluptatem quisquam nam non itaque et quas voluptates quis officiis maiores voluptatibus facere iure molestias nulla!
+            </p>
+            
+        </div>
+
+
+</body>
+</html>

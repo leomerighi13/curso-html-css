@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    a{
+        color: red;
+        text-decoration:none;
+        font-weight: bold;
+    }
+
+    a:visited{
+    color:darkred;
+
+    }
+    a:hover{
+        color:black;
+        text-decoration: underline;
+    }
+    a:active{
+    color:green;
+    
+
+    }
+
+    a::after{
+    content:" [link]";
+    text-decoration:none;
+    font-weight: normal;
+    color:black;
+
+    }
+
+    a::selection{
+    background-color:white;
+    border-radius:30px
+    }
+
+    .especial{
+    background-color: black;
+
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ol type="a">
+    <li><a href="https://www.youtube.com/watch?v=NlY9JTr5NZY" target="_blank" rel="external">Youtube Yugioh</a></li>
+    <li> <a href="https://www.youtube.com/watch?v=5BsitI5rHKI" class="especial" target="_blank" rel="external">Youtube harry potter</a></li>
+    <li> <a href="https://www.youtube.com/watch?v=E2CtsfdB2A4&list=RDE2CtsfdB2A4&start_radio=1" target="_blank" rel="external">Youtube qualquer coisa</a></li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>Desafio da imagem flexivel</h1>
+    <p>Veremos agora que podemos utilizar imagens dinamicas, ou seja ou diminuir o tamanho da página também diminuimos o tamanho da imagem veja só:</p>
+    <picture>
+    <source media="(max-width: 700px)" srcset="paisagem-p.png" type="image/png">
+    <source media="(max-width: 1100px)" srcset="paisagem-m.png" type="image/png">
+    <img src="paisagem-g.png" alt="Foto de mulher de braços abertos" type="image/png">
+    </picture>
+</body>
+</html>

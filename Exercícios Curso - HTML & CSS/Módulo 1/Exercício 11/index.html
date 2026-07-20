@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <h1>Aplicando a primeira imagem dinâmica</h1>
+    <h2>Utilizando as tags &lt;picture&gt; e &lt;source&gt;</h2>
+    <picture> 
+        <source media="(max-width:750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="imagem de refêrencia">
+    </picture>
+    <h2>Página 2</h2>
+    <p>Agora iremos criar uma nova página com novas imagens ná mesma, veja só</p>
+    <a href="fotos11/index2.html" target="_self" rel="next">Página 2</a>
+    <p>Também irei testar uma imagem própria para ver se realmente entendemos o procedimento</p>
+    <h1>Segunda imagem dinâmica</h1>
+    <picture>
+        <source media="(max-width:750px)" srcset="tapiz-3.png" rel="prev" type="image/png">
+        <source media="(max-width:1050px)" srcset="tapiz-2.png" rel="prev" type="image/png">
+        <img src="tapiz-1.png" alt="foto personagem de rpg, próprio">
+    </picture>
+    <p> Está imagem se trata de um personagem de: <abbr title="roleplay game">RPG</abbr><br>também iremos inserir um áudio para teste.</p>
+    <h1>Audio</h1>
+    <audio preload="metadata" controls>
+        <source src="happy-mistake.mp3" type="audio/mpeg">
+        <source src="happy-mistake.ogg" type="audio/ogg">
+        <source src="happy-mistake.wav" type="image/wav">
+        <p>Seu navegador não suporta áudio <a href="guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">Audio pra download</a></p>
+    </audio>  
+</body>
+<!-- </html> -->
