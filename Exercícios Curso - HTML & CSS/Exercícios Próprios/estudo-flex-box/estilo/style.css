@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+*{
+    margin:0px;
+    padding: 0px;
+
+}
+
+body{
+    color:rgb(22, 22, 67);
+
+}
+
+main{
+    background-color:rgba(22, 22, 67, 0.732);
+    color: white;
+    min-width: 320px;
+    max-width:420px;
+    min-height: 500px;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;    /* esses três itens são os que deixam o flex como queremos */
+    justify-content: center;
+    align-items: center;
+    gap: 30px 20px;
+    
+
+}
+
+main > img{
+    width: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-top: 30px;
+    background-color: rgb(193, 187, 204);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+    box-shadow: 0px 0px 5px black;
+   
+    
+
+
+}
+
+main  h2{
+    font-weight: lighter;
+    font-size: 2.5em;
+    font-family:cursive;
+    text-align: center;
+    text-shadow: 0px 0px 1px white;
+   
+    
+
+}
+
+main  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+    font-weight: bold;
+    color:rgb(177, 179, 229);
+
+}
+
+p#texto{
+    font-size: 1em;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+
+}
+
+main > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+
+
+main  button{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:normal;
+    font-size: 0.9em;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    color: rgb(20, 7, 58);
+    border: 1px;
+    text-shadow: 0px 0px 0.5px black;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+
+main button:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-4px);
+
+}
+
+main button:active{
+transform: translateY(0px);
+
+}
