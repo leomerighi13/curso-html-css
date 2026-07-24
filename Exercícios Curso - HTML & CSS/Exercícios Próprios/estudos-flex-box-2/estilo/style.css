@@ -8,6 +8,11 @@
     
 }
 
+body{
+    background-image: url('../imagens/foto_piano_pq.JPG');
+
+}
+
 header{
     background-image: linear-gradient(to top, rgb(232, 205, 205), rgb(233, 206, 206));
     padding: 40px 0px 40px 0px;
