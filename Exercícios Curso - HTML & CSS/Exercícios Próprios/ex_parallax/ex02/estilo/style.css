@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    height: 180px;
+    background-color: rgba(134, 10, 10, 0.671);
+
+}
+
+header > h1{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vw;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    padding: 15px 0px;
+
+
+}
+
+header > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 15px 0px;
+    text-align: center;
+
+}
+
+
+section#imagem{
+    height: 400px;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+  
+}
+
+section#imagem > p{
+    height: 400px;
+    width: 50vw;
+    line-height: 2.5em;
+    font-size: 1em;
+    padding:  0px 20px;
+    background-color: rgba(82, 69, 69, 0.23);
+
+
+}
+
+
+section#imagem > div{
+    width: 50vw;
+    height: 400px;
+    background-image: url('../imagens/piano.jpg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+
+section#texto{
+    height: 700px;
+    padding: 40px 0px;
+
+}
+
+div#parte2{
+    background-color: rgba(82, 69, 69, 0.23) ;
+
+}
+
+h2{
+    font-family:cursive;
+    text-align: center;
+    font-size: 3em;
+    padding: 40px 20px;
+
+}
+
+h3{
+    font-family:cursive;
+    font-size: 2em;
+    padding: 0px 20px;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 0px 20px;
+}
