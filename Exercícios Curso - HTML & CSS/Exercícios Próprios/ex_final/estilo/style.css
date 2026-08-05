@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap');
+
+
+:root{
+
+    --cor01:#024059;
+    --cor02:#037F8C;
+    --cor03:#012326;
+    --cor04:#D9B36C;
+    --cor05:#A67841;
+
+    --fonte01:"Sekuya", system-ui;
+    --fonte02:"Arimo", sans-serif;
+    --fonte03:"Bitcount Ink", system-ui;
+
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg);
+    background-position: top center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+
+
+}
+
+header{
+    height: 20vh;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--cor01), var(--cor02));
+
+}
+
+header h1{
+    text-align: center;
+    font-size: 5vw;
+    font-family: var(--fonte01);
+    color:var(--cor04);
+    text-shadow: 0px 0px 3px black;
+
+}
+
+header p{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    color:white;
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px black;
+}
+
+nav{
+    background-image: linear-gradient(to right, var(--cor01), var(--cor02));
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    position:sticky;
+    top: -1px;
+   
+}
+
+nav > a{
+    background-color: var(--cor05);
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 1px black;
+   
+    
+
+}
+
+nav > a:hover{
+    background-color: black;
+    color: var(--cor04);
+    transition-duration: 0.3s;
+    transform: translateY(-4px);
+    text-shadow: 0px 0px 1px var(--cor04);
+    box-shadow: 0px 0px 3px var(--cor05);
+
+}
+
+section{
+    width: 80vw;
+    height: 100vh;
+    background-color: var(--cor03);
+    border: 1px solid black;
+    margin: auto;
+    box-shadow: 0px 0px 5px black;
+    overflow: auto;
+
+}
+
+section > h2{
+    font-size: 3em;
+    font-family: var(--fonte03);
+    text-align: center;
+
+}
+
+section > h3{
+    color: var(--cor04);
+    font-family: var(--fonte02);
+    font-size: 2em; 
+    padding: 5px 15px;
+
+}
+
+
+
+img{
+    height: 63.5vh;
+    width: 80vw;
+
+}      
+
+
+
+section#sectabelas{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    
+
+}
+
+section#sectabelas  table{
+    border-collapse: collapse;
+}
+
+section ul{
+    padding: 10px;
+
+}
+
+
+section a{
+    line-height: 2em;
+    color: var(--cor04);
+    font-size: 1em;
+    text-decoration: none;
+
+}
+
+caption{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: var(--cor05);
+    font-family: var(--fonte01);
+    font-weight: 500;
+    font-size: 1em; 
+}
+
+
+tr{
+    background-color: var(--cor01);
+
+}
+
+th{ 
+    background-color: var(--cor02);
+    color:#070707;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    padding: 20px;
+    
+
+}
+
+ td {
+    color:#D9B36C;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    text-shadow: 0px 0px 1px var(--cor04);
+    padding: 20px;
+    
+}
+
+td.final{
+    color: white;
+
+}
+
+
+
+p{
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 5px 15px;
+}
+
+ul{
+    list-style-position: inside;
+    columns: 2;
+
+}
+
+footer{
+   background-color: black;
+    height: 10vh;
+    border: 1px solid black;
+
+}
+
+footer  p{
+    color: var(--cor04);
+    text-align: center;
+    font-size: 2vw;
+    padding: 20px;
+    text-shadow: 0px 0px 1px var(--cor05);
+    
+
+}
