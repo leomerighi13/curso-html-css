@@ -59,6 +59,14 @@ header h1{
 
 }
 
+header h1:hover{
+    color: black;
+    text-shadow:0px 0px 7px var(--cor04);
+    transition: 2s;
+
+
+}
+
 header p{
     text-align: center;
     font-size: 1.2em;

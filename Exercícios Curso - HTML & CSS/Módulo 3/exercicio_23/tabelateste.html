@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Tete</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            border-collapse: collapse;
+
+
+        }
+
+        caption{
+            background-image: linear-gradient( 90deg, rgb(41, 41, 109), rgb(4, 4, 81)) ;
+            color: white;
+            border: 0.5px solid black;
+            padding: 20px;
+            font-size: 1.4em;
+            font-weight: bold;
+            
+
+        }
+
+        thead > tr> th{
+            background-color: rgb(116, 116, 201);
+            font-weight: 600;
+            font-size: 1.2em;
+            position: sticky;
+            top:-1px;
+
+        }
+
+        th#foothead{
+             background-image: linear-gradient( 90deg, rgb(41, 41, 109), rgb(4, 4, 81)) ;
+            color: white;
+            
+        }
+
+        tbody > tr:nth-child(2n){
+            color: white;
+            background-image: linear-gradient(90deg, rgb(148, 148, 161), rgb(71, 71, 121));
+            
+
+        }
+
+        td, th{
+            
+            width: 300px;
+            border: 1px solid black;
+            box-shadow: inset 0px 0.5px 3px black;
+            font-weight: normal;
+            padding: 10px;
+            font-weight: bold;
+
+        }
+
+        td.num{
+            text-align: right;
+
+        }
+
+        td.numfoot{
+            background-color: rgb(116, 116, 201);
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercício de Construção de tabelas</h1>
+    </header>
+    <main>
+        <table>
+             <caption>Quantidade de habitantes por país na America do Sul</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Países</th>
+                    <th scope="col">Número de Hab.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Brasil</td>
+                    <td class="num">213.562.666</td>
+                </tr>
+                <tr>
+                    <td>Colômbia</td>
+                    <td class="num">53.936.226</td>
+                </tr>
+                <tr>
+                    <td>Argentina</td>
+                    <td class="num">46.003.734</td>
+                </tr>
+                <tr>
+                    <td>Peru</td>
+                    <td class="num">34.922.148</td>
+                </tr>
+                <tr>
+                    <td>Venezuela</td>
+                    <td class="num">28.633.711</td>
+                </tr>
+                <tr>
+                    <td>Chile</td>
+                    <td class="num">19.945.850</td>
+                </tr>
+                <tr>
+                    <td>Equador</td>
+                    <td class="num">18.444.506</td>
+                </tr>
+                <tr>
+                    <td>Bolívia</td>
+                    <td class="num">12.749.291</td>
+                </tr>
+                <tr>
+                    <td>Paraguai</td>
+                    <td class="num">7.095.279</td>
+                </tr>
+                <tr>
+                    <td>Uruguai</td>
+                    <td class="num">3.382.537</td>
+                </tr>
+                <tr>
+                    <td>Guiana</td>
+                    <td class="num">840.890</td>
+                </tr>
+                <tr>
+                    <td>Suriname</td>
+                    <td class="num">645.256</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="col" colspan="2" id="foothead">Quantidade total de Habs.</th>
+                    
+                </tr>
+                <tr><td class="numfoot" colspan="2">440.162.094</td></tr>
+            </tfoot>
+        </table>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sed veniam! Ab rem quasi nobis saepe incidunt velit adipisci temporibus laudantium, exercitationem natus iusto doloribus rerum ipsum ex harum magni? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nisi odit ut, voluptate fugit deserunt nesciunt quisquam illo iure repellat provident quas eveniet. Et fugit doloribus maxime, vero velit blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil repudiandae maiores a error doloremque quaerat totam aut, in corrupti non accusamus quae voluptas! Cum cupiditate facere reiciendis nesciunt? Voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sed veniam! Ab rem quasi nobis saepe incidunt velit adipisci temporibus laudantium, exercitationem natus iusto doloribus rerum ipsum ex harum magni? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nisi odit ut, voluptate fugit deserunt nesciunt quisquam illo iure repellat provident quas eveniet. Et fugit doloribus maxime, vero velit blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil repudiandae maiores a error doloremque quaerat totam aut, in corrupti non accusamus quae voluptas! Cum cupiditate facere reiciendis nesciunt? Voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sed veniam! Ab rem quasi nobis saepe incidunt velit adipisci temporibus laudantium, exercitationem natus iusto doloribus rerum ipsum ex harum magni? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nisi odit ut, voluptate fugit deserunt nesciunt quisquam illo iure repellat provident quas eveniet. Et fugit doloribus maxime, vero velit blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil repudiandae maiores a error doloremque quaerat totam aut, in corrupti non accusamus quae voluptas! Cum cupiditate facere reiciendis nesciunt? Voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sed veniam! Ab rem quasi nobis saepe incidunt velit adipisci temporibus laudantium, exercitationem natus iusto doloribus rerum ipsum ex harum magni? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nisi odit ut, voluptate fugit deserunt nesciunt quisquam illo iure repellat provident quas eveniet. Et fugit doloribus maxime, vero velit blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil repudiandae maiores a error doloremque quaerat totam aut, in corrupti non accusamus quae voluptas! Cum cupiditate facere reiciendis nesciunt? Voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, sed veniam! Ab rem quasi nobis saepe incidunt velit adipisci temporibus laudantium, exercitationem natus iusto doloribus rerum ipsum ex harum magni? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nisi odit ut, voluptate fugit deserunt nesciunt quisquam illo iure repellat provident quas eveniet. Et fugit doloribus maxime, vero velit blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nihil repudiandae maiores a error doloremque quaerat totam aut, in corrupti non accusamus quae voluptas! Cum cupiditate facere reiciendis nesciunt? Voluptates.</p>
+    </main>
+
+</body>
+</html>
