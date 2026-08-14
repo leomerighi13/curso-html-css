@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        section{
+            width: 600px;
+            height:400px;
+            background-color: black;
+            padding-top: 30px;
+            margin: auto;
+
+        }
+
+        section > h1{
+            text-align: center;
+            color: white;
+            font-size: 3em;;
+
+        }
+
+        div{
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        form{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            
+
+
+
+        }
+        
+        input{
+            text-align: center;
+            padding: 3px;
+            margin: 10px;
+
+        }
+
+        label{
+            color: turquoise;
+            text-align: center;
+            font-family:fantasy;
+            font-size: 1.5rem;
+
+
+        }
+
+        input#botao{
+            border: 1px solid black;
+            box-sizing: border-box;
+            font-family: fantasy;
+            font-size: 1.5rem;
+
+        }
+
+        input#botao:hover{
+            background-color:red;
+            box-shadow: 0px 0px 3px black;
+
+        }
+
+        input#botao:active{
+            background-color:rgb(143, 6, 6);
+            color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Faça sua inscrição aqui</h1>
+            <div>
+                <form method="get" action="cadastro.php">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" autocomplete="on">
+                    <label for="idade">Idade:</label>
+                    <input type="text" name="idade" id="idade" autocomplete="on">
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" id="email" autocomplete="on">
+                    <input type="submit" value="Inscrever" id="botao">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

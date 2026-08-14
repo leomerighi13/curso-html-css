@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testagem de formulários</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header{
+            height: 100px;
+            background-color: black;
+        }
+        
+        header > h1{
+            color: gold;
+            font-family: fantasy;
+            text-align: center;
+            text-shadow: 0px 0px 5px black;
+            padding: 20px;
+
+        }
+
+        section{
+            height: 300px;
+            margin:auto;
+
+        }
+
+       form{
+       
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        
+
+
+       }
+
+       input{
+        margin: 10px;
+
+       }
+
+
+
+    </style>
+</head>
+<body>
+      <header>
+        <h1>Meu Formulário</h1>
+      </header>  
+      <main>
+        <section>
+            <div>
+                <form method="post" action="cadastro.php">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="idade">Idade:</label>
+                    <input type="text" name="idade" id="idade">
+                    <label for="nota1">Nota - 1:</label>
+                    <input type="text" name="nota1" id="nota1">
+                    <label for="nota2">Nota - 2:</label>
+                    <input type="text" name="nota2" id="nota2">
+                    <input type="submit" value="Enviar" id="botao">
+                </form>
+            </div>
+        </section>
+        <section></section>
+      </main>
+</body>
+</html>
