@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+        div#formu > form{
+            width:500px;
+            height: 650px;
+            background-color: turquoise;
+            display:flex;
+            flex-direction: column;
+            gap:50px;
+            margin: auto;
+
+        }
+
+        div{
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        select#iturma{
+            width: 200px;
+
+
+        }
+
+        div#envio > input{
+            background:rgba(140, 13, 13, 0.718);
+            width:230px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-left:10px;
+            padding:10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px black;
+            
+
+        }
+
+        div#envio > input:hover{
+            background: red;
+
+        }
+
+        option:nth-child(odd){
+            background-color: rgba(209, 60, 60, 0.438);
+        }
+
+
+       
+
+
+    </style>
+</head>
+<body>
+    
+    <main>
+        <section>
+            <h1>Estudo de formulários</h1>
+            
+                <div id="formu">
+                    <form action="cadastro.php" method="post" autocomplete="on">Cadastro de Avaliações
+                    <div>
+                        <label for="inome">Nome</label>
+                        <input type="text" name="nome" id="inome" autocomplete="name" required placeholder="Nome completo do aluno" maxlength="50" size="25" >
+                    </div>
+                    <div>
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="E-mail institucional" maxlength="50" size="25">
+                    </div>
+                    <div>
+                        <label for="iturma">Série/ Turma</label>
+                        <select name="turma" id="iturma" required>
+                            <option value="1A">1º Ano Médio - Turma A</option>
+                            <option value="1B">1º Ano Médio - Turma B</option>
+                            <option value="1C">1º Ano Médio - Turma C</option>
+                            <option value="2A">2º Ano Médio - Turma A</option>
+                            <option value="2B">2º Ano Médio - Turma B</option>
+                            <option value="2C">2º Ano Médio - Turma C</option>
+                            <option value="3A">3º Ano Médio - Turma A</option>
+                            <option value="3B">3º Ano Médio - Turma B</option>
+                            <option value="3C">3º Ano Médio - Turma C</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <fieldset style="width:300px;">
+                            <legend>Escolha do Semestre</legend>
+                            <label for="1sem">1º Semestre</label>
+                            <input type="radio" name="semestre" id="1sem" checked>
+                            <label for="2sem">2º Semestre</label>
+                            <input type="radio" name="semestre" id="2sem">
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <fieldset style="width:300px;">
+                            <legend>Escolha da Avaliação a cadastrar</legend>
+                            <label for="ava1">Avaliação 1</label>
+                            <input type="radio" name="avaliaçao" id="ava1" checked>
+                            <label for="ava2">Avaliação 2</label>
+                            <input type="radio" name="avaliaçao" id="ava2">
+                        </fieldset>
+                    </div>
+
+                    <div>
+                            <label for="idata">Data da prova</label>
+                            <input type="date" name="Data" id="idata" required value="2026-01-01">
+                    </div>
+
+                    <div>
+                        <label for="inota">Nota</label>
+                        <input type="number" name="nota" id="inota" required min="0.0" max="10.0" step="0.1" value="0.0">
+                    </div>
+
+                             
+                    <div id="envio">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                 
+                    </form>
+                </div>
+            
+        </section>
+        <section>
+            <div>
+
+            </div>
+        </section>  
+    </main>
+
+</body>
+</html>

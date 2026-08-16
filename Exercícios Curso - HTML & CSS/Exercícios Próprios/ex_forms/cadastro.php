@@ -1,0 +1,1 @@
+Este é um arquivo de cadastro feito meramente para motivos de estudo.
