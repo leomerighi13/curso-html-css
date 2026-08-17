@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <style>
+            #ibacana {
+    --cor-slider: hsl(60, 100%, 50%);
+    accent-color: var(--cor-slider); 
+  }
+
+  #ibacana::-webkit-slider-thumb {
+    background-color: var(--cor-slider);
+    transition: background-color 0.15s ease;
+  }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="">
+        <div>
+            <legend>Sexo</legend>
+            <fieldset>
+                <label for="imasc">Masculino</label>
+                <input type="radio" name="sex" id="imasc" checked value="MASC"><br>
+                <label for="ifem">Feminino</label>
+                <input type="radio" name="sex" id="ifem" value="FEM">
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label> <br>
+                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+                <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+            </fieldset>
+        </div>
+
+
+        <div>
+            <label for="icor">Seleção de Cor</label>
+            <input type="color" name="Cor" id="icor" value="#000000"> <br>
+            <label for="ibacana">Bacanomêtro</label>
+            <input type="range" name="bacana" id="ibacana" min="0" max="5" value="2.5" step="0.5" required>
+        </div>
+
+
+
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
