@@ -6,8 +6,264 @@
     <title>Projeto Brasil</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <style>
+            section{
+
+
+        }
+
+        table{
+            
+            width: 800px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+
+        }
+
+        caption{
+            color: white;
+            background-color: rgb(54, 24, 104);
+            padding: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+
+        }
+
+        tr:nth-child(2n){
+            background-color: rgb(145, 152, 200);
+
+        }
+        th{
+            background-color: rgb(113, 121, 184);
+            color:aliceblue;
+            font-weight: bold;
+        }
+
+        td,th{
+            border: 1px solid black;
+            font-weight: 300;
+            
+
+        }
+
+        tr.fim{
+            background-color: rgb(64, 74, 159);
+            color:rgb(242, 245, 248);
+            font-weight: bold;
+
+        }
+
+        tr.dd{
+            color: white;
+
+        }
+
+        tr:not(.fim) td:nth-child(2n){
+            color: rgb(7, 7, 7);
+            font-weight: bold;
+            
+
+        }
+
+
+
+
+
+    </style>
 </head>
 <body>
-    
+    <main>
+        <section>
+            <table>
+                <caption>População e PIB por Estado do Brasil</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>UF</th>
+                        <th>População (Habitantes)</th>
+                        <th>PIB (R$ bilhões)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Acre</td>
+                        <td>AC</td>
+                        <td>830.018</td>
+                        <td>21,3</td>
+                    </tr>
+                    <tr>
+                        <td>Alagoas</td>
+                        <td>AL</td>
+                        <td>3.127.683</td>
+                        <td>76,3</td>
+                    </tr>
+                    <tr>
+                        <td>Amapá</td>
+                        <td>AP</td>
+                        <td>733.759</td>
+                        <td>20,1</td>
+                    </tr>
+                    <tr>
+                        <td>Amazonas</td>
+                        <td>AM</td>
+                        <td>3.941.613</td>
+                        <td>131,5</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td>BA</td>
+                        <td>14.141.626</td>
+                        <td>352,6</td>
+                    </tr>
+                    <tr>
+                        <td>Ceará</td>
+                        <td>CE</td>
+                        <td>8.794.957</td>
+                        <td>194,9</td>
+                    </tr>
+                    <tr>
+                        <td>Distrito Federal</td>
+                        <td>DF</td>
+                        <td>2.817.381</td>
+                        <td>286,9</td>
+                    </tr>
+                    <tr>
+                        <td>Espírito Santo</td>
+                        <td>ES</td>
+                        <td>3.833.712</td>
+                        <td>186,1</td>
+                    </tr>
+                    <tr>
+                        <td>Goiás</td>
+                        <td>GO</td>
+                        <td>7.056.495</td>
+                        <td>279,7</td>
+                    </tr>
+                    <tr>
+                        <td>Maranhão</td>
+                        <td>MA</td>
+                        <td>6.775.805</td>
+                        <td>124,9</td>
+                    </tr>
+                    <tr>
+                        <td>Mato Grosso</td>
+                        <td>MT</td>
+                        <td>3.658.649</td>
+                        <td>233,4</td>
+                    </tr>
+                    <tr>
+                        <td>Mato Grosso do Sul</td>
+                        <td>MS</td>
+                        <td>2.757.013</td>
+                        <td>142,2</td>
+                    </tr>
+                    <tr>
+                        <td>Minas Gerais</td>
+                        <td>MG</td>
+                        <td>20.538.718</td>
+                        <td>857,6</td>
+                    </tr>
+                    <tr>
+                        <td>Pará</td>
+                        <td>PA</td>
+                        <td>8.116.132</td>
+                        <td>262,9</td>
+                    </tr>
+                    <tr>
+                        <td>Paraíba</td>
+                        <td>PB</td>
+                        <td>3.974.687</td>
+                        <td>77,5</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td>PR</td>
+                        <td>11.444.380</td>
+                        <td>550,0</td>
+                    </tr>
+                    <tr>
+                        <td>Pernambuco</td>
+                        <td>PE</td>
+                        <td>9.058.931</td>
+                        <td>220,8</td>
+                    </tr>
+                    <tr>
+                        <td>Piauí</td>
+                        <td>PI</td>
+                        <td>3.269.200</td>
+                        <td>64,0</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td>RJ</td>
+                        <td>16.054.524</td>
+                        <td>949,3</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Norte</td>
+                        <td>RN</td>
+                        <td>3.302.729</td>
+                        <td>80,0</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul</td>
+                        <td>RS</td>
+                        <td>10.880.506</td>
+                        <td>581,0</td>
+                    </tr>
+                    <tr>
+                        <td>Rondônia</td>
+                        <td>RO</td>
+                        <td>1.581.196</td>
+                        <td>58,2</td>
+                    </tr>
+                    <tr>
+                        <td>Roraima</td>
+                        <td>RR</td>
+                        <td>636.303</td>
+                        <td>18,2</td>
+                    </tr>
+                    <tr>
+                        <td>Santa Catarina</td>
+                        <td>SC</td>
+                        <td>7.609.601</td>
+                        <td>428,6</td>
+                    </tr>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td>SP</td>
+                        <td>44.420.459</td>
+                        <td>2.719,8</td>
+                    </tr>
+                    <tr>
+                        <td>Sergipe</td>
+                        <td>SE</td>
+                        <td>2.209.558</td>
+                        <td>51,8</td>
+                    </tr>
+                    <tr>
+                        <td>Tocantins</td>
+                        <td>TO</td>
+                        <td>1.511.459</td>
+                        <td>51,8</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="fim">
+                        <td colspan="2">Brasil (Total)</td>
+                        <td class="fim" id="dd">203.062.512</td>
+                        <td>9.012,1</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
 </body>
 </html>

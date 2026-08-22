@@ -66,8 +66,6 @@ a:hover {
   color: var(--cor-destaque);
 }
 
-/* página 1 */
-
 header{
     height: 180px;
     background-image: linear-gradient(90deg, var(--cor-destaque-hover), var(--cor-destaque));
@@ -93,57 +91,6 @@ header p {
 
 }
 
-nav{
-    height: 60px;
-    background-image: linear-gradient(90deg, var(--cor-destaque-hover), var(--cor-destaque));
-    padding-left: 30px;
-    outline: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-
-
-}
-
-
-nav a{
-    background-color:#6C757D;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    text-shadow: 0px 0px 1px var(--borda-cor);
-    font-size: 1rem;
-    vertical-align: middle;
-    font-weight: bolder;
-    border-radius: 5px;
-    border: 2px solid var(--borda-cor);
-    box-shadow: 0px 0px 2px var(--borda-cor);
-    box-sizing: border-box;
-
-
-}
-
-
-nav a:hover{
-    color:#FFB703;
-    background-color: var(--cor-secundaria);
-    font-weight: 900;
-    text-shadow: 0px 0px 1px var(--cor-destaque-hover);
-    border: 2px solid var(--cor-primaria);
-    transform: translateY(-5px);
-    transition: 0.2s;
-
-}
-
-nav a:active{
-    color: yellow;
-    background-color: var(--texto-principal);
-    border: 0.5px solid var(--texto-principal);
-    transform: translateY(2px);
-    transition: 0.2s;
-
-}
-
 main h2{
     text-align: center;
     text-shadow: 0px 0px 1px var(--texto-principal);
@@ -154,42 +101,85 @@ main h2{
 main p{
     text-indent: 10px;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
 }
 
-#secibge iframe{
+div#pic{
     width: 100vw;
-    height: 500px;
-
-}
-
-#secyoutube iframe{
+    height: 300px;
+    display: flex;
+    background-image: url("../imagens/brasil-pg1-maior.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
    
-    height: 400px;
-    margin: 0px;
-
-
-}
-
-#secyoutube h3{
-    padding: 10px;
 
 }
 
 
-section picture{
+section#secframe{
+   
+    width: 100vw;
+
+}
+
+iframe{
+    width: 100vw;
+    overflow: scroll;
+
+}
+
+section > div{
+
+
+}
+
+div#links{
+    width: 97vw;
+    background-color: var(--cor-destaque);
     display: flex;
     justify-content: center;
-   
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    margin-left: 15px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 20px;
+
 
 }
+
+a > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--cor-secundaria);
+    box-shadow: 1px 0px 3px #E0A100;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
-    height: 80px;
+    height: 50px;
     background-image: linear-gradient(90deg, var(--cor-destaque-hover), var(--cor-destaque));
     text-align: center;
 
@@ -207,5 +197,3 @@ footer > p > strong{
 
 
 }
-
-

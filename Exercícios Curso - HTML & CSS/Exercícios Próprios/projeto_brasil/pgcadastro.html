@@ -6,8 +6,200 @@
     <title>Projeto Brasil</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <style>
+        :root {
+            /* --- Cores Principais --- */
+            --cor-primaria: #0F5257;        /* Verde institucional */
+            --cor-secundaria: #1D3557;      /* Azul escuro */
+            --cor-destaque: #FFB703;        /* Amarelo/Dourado */
+            --cor-destaque-hover: #E0A100;
+
+            /* --- Cores de Fundo e Texto --- */
+            --bg-pagina: #F8F9FA;           /* Fundo principal da página */
+            --bg-card: #FFFFFF;             /* Fundo de seções, cards e tabelas */
+            --texto-principal: #212529;     /* Cor de parágrafos e corpo */
+            --texto-suave: #6C757D;         /* Subtítulos e dados secundários */
+            --texto-claro: #FFFFFF;         /* Texto sobre fundos escuros */
+
+            /* --- Bordas e Sombras --- */
+            --borda-cor: #DEE2E6;
+
+            /* --- Tipografia --- */
+            --fonte-titulo: 'Montserrat', sans-serif;
+            --fonte-corpo: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+                }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{  
+            color: white;
+            background-color: var(--cor-secundaria);
+            font-family: var(--fonte-titulo);
+        }
+
+        header{
+            height: 180px;
+            background-color: var(--cor-destaque-hover);
+            
+
+        }
+
+        header h1{
+            font-size: 4rem;
+            text-align: center;
+            text-shadow: 0px 0px 1px white;
+
+        }
+
+
+        section{
+            background-color: #0F5257;
+            height: 100%;
+            padding: 10vw;
+            
+
+        }
+
+       
+
+        div form{
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            gap: 20px;
+            margin: auto;
+
+
+        }
+
+        div  div{
+            background-color: var(--texto-principal);
+            padding: 20px;
+            border: 1px solid var(--cor-primaria);
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+
+        div input{
+            width: 43vw;
+            font-size: 1.2rem;
+            
+
+           
+        }
+
+        div label{
+            font-size: 1.5rem;
+           
+            
+        }
+
+        input,label{
+            width: 500px;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+       div.requi{
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+
+       }
+       
+       div.requi label{
+            width: 800px;
+            font-size: 1rem;
+
+
+       }
+       div.requi input{
+            height: 20px;
+
+
+       }
+
+       input#submit{
+        color: white;
+        background-color: #E0A100;
+        width: 780px;
+        padding: 22px;
+        font-weight: bold;
+        font-size: 2rem;
+        text-shadow: 1px 0px 0.5px white;
+        border-radius: 10px;
+        border: inset 1px 0px 3px black;
+       
+
+       }
+       input#submit:hover{
+        background-color: #040300;
+        transform: translateY(-4px);
+        transition: 0.2s;
+
+       }
+
+
+
+    </style>
 </head>
 <body>
-        
+    <header>
+         <h1>Cadastre-se no Projeto Brasil</h1>
+    </header>
+        <main>
+            <section>
+               
+                <div>
+                    
+                    <form action="cadastro.php" method="post" autocomplete="on">
+                        <div>
+                            <label for="inome">Nome</label><br>
+                            <input type="text" name="nome" id="inome" placeholder="Digite seu nome" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label for="inome">Sobrenome</label><br>
+                            <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome" autocomplete="nickname" required>
+                        </div>
+                        <div>
+                            <label for="iemail">E-mail</label><br>
+                            <input type="email" name="email" id="iemail" autocomplete="email" placeholder="E-mail" required>
+                        </div>
+                        <div>
+                            <label for="inasci">Data de Nascimento</label>
+                            <input type="date" name="nasci" id="inasci" value="2026-01-01" required>
+                        </div>
+                        
+                       
+                      
+                        <div>
+                            <label for="icoment">Deixe seu comentário</label><br><br>
+                            <textarea name="coment" id="icoment" maxlength="150" cols="100" rows="15" placeholder="Comentário..."></textarea>
+                        </div>
+
+                        <div class="requi">
+                           
+                                <label for="iaceit">Aceito receber as novidades do <strong>Projeto Brasil</strong>.</label>
+                                <input type="checkbox" name="aceit" id="iaceit" checked>
+                            
+                        
+                        </div>
+
+                         <div class="requi">
+                            <label for="iaceit">Concordo com os Termos de Uso.</label>
+                            <input type="checkbox" name="aceit" id="iaceit"  required>
+                        </div>
+
+                        <input type="submit" value="Enviar" id="submit">
+                    </form>
+                </div>
+            </section>
+        </main>
 </body>
 </html>
