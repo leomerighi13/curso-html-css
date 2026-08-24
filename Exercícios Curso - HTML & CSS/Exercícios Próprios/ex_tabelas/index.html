@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de Tabelas</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h1{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 60px;
+            margin-bottom: 40px;
+
+
+        }
+
+        section{
+            text-align: center;
+          
+
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: auto;
+
+        }
+
+        caption{
+            height: 40px;
+            background-color: cadetblue;
+            font-size: 2rem;
+            border: 1px solid black;
+            padding: 20px;
+            
+
+        }
+
+        td,tr,th{
+            height: 25px;
+            width: 170px;
+            border: 1px solid black;
+            text-align: center;
+
+
+        }
+
+        col.modif{
+            background-color: aquamarine;
+
+
+        }
+
+        td.reprov{
+            background-color: rgba(255, 0, 0, 0.597);
+
+
+        }
+
+    </style>
+</head>
+<body>
+        
+        <main>
+            <section>
+                <h1>Tabela de Classificação de Concurso</h1>
+                <div>
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col span="2" class="modif">
+                            <col>
+                    
+                        </colgroup>
+                        <caption>11º Concurso de Composição Musical</caption>
+                        <thead>
+                            <tr>
+                                <th rowspan="2" scope="col">Nome</th>
+                                <th rowspan="2" scope="col">CPF</th>
+                                <th rowspan="2" scope="col">E-mail</th>
+                                <th colspan="2" scope="colgroup">Notas</th>
+                                <th rowspan="2" scope="col">Classificação</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Nota 1</th>
+                                <th>Nota 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ana Silva</td>
+                                <td>123.456.789-00</td>
+                                <td>ana.silva@email.com</td>
+                                <td>8.5</td>
+                                <td>9.0</td>
+                                <td>Aprovado</td>
+                            </tr>
+                            <tr>
+                                <td>Bruno Santos</td>
+                                <td>987.654.321-11</td>
+                                <td>bruno.santos@email.com</td>
+                                <td>6.0</td>
+                                <td>5.5</td>
+                                <td>Recuperação</td>
+                            </tr>
+                            <tr>
+                                <td>Carla Oliveira</td>
+                                <td>456.789.123-22</td>
+                                <td>carla.oliveira@email.com</td>
+                                <td>9.5</td>
+                                <td>10.0</td>
+                                <td>Aprovado</td>
+                            </tr>
+                            <tr>
+                                <td>Diego Lima</td>
+                                <td>321.654.987-33</td>
+                                <td>diego.lima@email.com</td>
+                                <td class="reprov" >3.0</td>
+                                <td class="reprov"  class="reprov">4.5</td>
+                                <td>Reprovado</td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </section>
+        </main>
+</body>
+</html>
