@@ -1,1 +1,0 @@
-Esta é um página de cadastro fictícia
