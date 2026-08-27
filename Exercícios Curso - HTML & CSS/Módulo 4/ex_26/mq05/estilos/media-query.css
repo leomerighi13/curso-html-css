@@ -42,10 +42,7 @@
 /* impressão */
 @media only print{
 
-    menu{
-        display: none;
-
-    }
+    
 
     main:after{
         content: "Este site foi imprimido dia 27/08/2026"
