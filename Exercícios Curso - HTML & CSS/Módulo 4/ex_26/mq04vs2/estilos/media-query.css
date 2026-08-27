@@ -2,6 +2,14 @@
 
 /* Outras versões */
 
+/* Typical Device Breakpoints
+Pequenas telas - até 600px;
+Celular/Smartphones - 600px até 768px;
+Tablet's e Landscape view's - 768px até 992px;
+Computadores e Desktop's - 992px até 1200px;
+TV e grandes telas - minímamente 1200px;
+*/
+
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
  
@@ -22,8 +30,26 @@
 
     body{
         background-image: url(../imagens/back-print.jpg);
+    
+    }
+
+    main {
+        border: 2px solid black;
+
 
     }
+
+    main h1{
+        /* essas configs são desnecessárias, apenas são para deixar o design mais bonito na impressão. */
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+    
+
+    
+
+
     img#phone{ display: none;}
     img#tablet{ display: none;}
     img#print{ display: block;}
@@ -32,7 +58,7 @@
 
 }
 
-/* pc */
+/* pc/desktop */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
     body{
@@ -48,11 +74,19 @@
     
 }
 
-/* tv */
+/* tv e grandes telas */
 @media screen and (min-width: 1200px) {
     
     body{
         background-image: url(../imagens/back-tv.jpg);
+
+    }
+
+    /* mudei o tamanho do quadrado branco, apenas para teste */
+    main{
+        width: 700px;
+        height: 400px;
+
 
     }
 

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+
+/* tablet, pc,tv e telas grandes - faremos assim pois apenas telas menores que 768px terão o menu hamburger e depois disso não teremos mais quebras ou modificações. */
+@media screen and (min-width: 768px) {
+
+    menu{
+        display:block;
+        
+        
+
+    }
+    menu > ul > li {
+        display: inline-block;
+          
+    }
+
+    
+    /* escolha minha também :) */
+    main{
+        width: 700px;
+
+
+    }
+
+    /* soube fazer sozinho isso :) */
+     article > p{
+        columns: 2;
+
+    }
+
+    
+
+    span#burger{
+        display: none;
+
+    }
+    
+}
+
+
+/* impressão */
+@media only print{
+
+    menu{
+        display: none;
+
+    }
+
+    main:after{
+        content: "Este site foi imprimido dia 27/08/2026"
+
+    }
+}
+
+
+/* 
+Eu fiz assim também e deu certo, mas o Guanabara fez como esta no código atual
+
+menu{
+    display: block !important;
+
+}
+
+menu > ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+menu a{
+    display: block;
+    width: 100px;
+    
+} 
+*/
