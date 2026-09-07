@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            background-color: rgb(0, 0, 0);
+
+        }
+
+        main{
+            width: 90vw;
+            height: 100vh;
+            background-color: grey;
+            margin: auto;
+            display: flex;
+            flex-flow: row-reverse wrap-reverse;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            align-content: space-between;
+
+        }
+
+        section{
+            height: 200px;
+            width: 1200px;
+            background-color: lightgreen;
+            font-size: 3em;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section#i1{
+           
+
+        }
+
+        section#i2{
+            height: 200px;
+            width: 400px;
+           
+
+        }
+
+        section#i3{
+          height: 200px;
+        width: 400px;
+  
+
+        }
+
+        section#i4{
+
+
+        }
+
+      
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="i1"><h1>A</h1></section>
+        <section id="i2"><h1>B</h1></section>
+        <section id="i3"><h1>C</h1></section>
+        <section id="i4"><h1>D</h1></section>
+        
+    </main>
+</body>
+</html>

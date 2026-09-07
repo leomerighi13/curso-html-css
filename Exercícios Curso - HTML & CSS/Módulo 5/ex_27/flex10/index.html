@@ -8,26 +8,34 @@
         div.container{
             background-color: lightsalmon;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow:row nowrap;
+            
+            
         }
 
         div.item{
             background-color: lightblue;
             text-align: center;
             border: 1px solid black;
-            flex-basis:150px; 
+            flex-basis: 300px;
+            flex-grow:1; 
+            flex-shrink: 1;  
+            
+        }
+
+        div#i2{
+            flex-shrink: 2;
+            flex-grow: 0;
+
+
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">Agora sim</div>
-        <div class="item">conteudo um pouco maior</div>
+        <div class="item">A</div>
+        <div class="item" id="i2">B</div>
         <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">conteudo maior ainda que vai ocupar mais espaço</div>
-        <div class="item">G</div>
     </div>
 </body>
 </html>
