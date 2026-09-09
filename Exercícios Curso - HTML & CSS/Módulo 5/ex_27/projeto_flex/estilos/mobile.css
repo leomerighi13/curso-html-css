@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* mobile first */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: lightgray;
+}
+
+header{
+    
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    
+}
+
+header > h1{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.415);
+    padding: 10px;
+   
+
+}
+
+header > nav{
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    
+    
+}
+
+header > nav > a{
+    background-color: black; 
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    flex: auto;
+
+}
+
+header > nav > a:hover{
+    background-color: white;
+    color: rgb(6, 5, 0);
+    font-weight: 700;
+
+
+}
+
+header > nav > a:active{
+    background-color: rgba(255, 132, 0, 0.852);
+
+
+}
+
+main{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.378);
+}
+
+main> h2{
+    padding-bottom: 10px;
+
+}
+
+main > p{
+    padding-bottom: 5px;
+
+}
+
+

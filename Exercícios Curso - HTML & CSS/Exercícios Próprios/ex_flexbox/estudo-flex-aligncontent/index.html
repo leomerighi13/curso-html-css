@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        main{
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            display: flex;
+            flex-flow: row wrap;
+            align-content:flex-start;
+
+        }
+
+        div{
+            background-color: lightsalmon;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            
+            
+
+        }
+
+        div#divo{
+            flex-basis:100px;
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="divo"></div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </main>
+</body>
+</html>
