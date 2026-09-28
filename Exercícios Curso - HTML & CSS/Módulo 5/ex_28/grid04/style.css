@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+div.container{
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+    border: 1px dashed blue;
+    gap: 10px;
+
+}
+div.caixa1{
+background-color: red;
+font-weight: bold;
+grid-row-start:1;
+grid-row-end:2;
+grid-column-start:1;
+grid-column-end:-1;
+border: 1px dashed blue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+div.caixa2{
+background-color: green;
+font-weight: bold;
+grid-row-start:2;
+grid-row-end:-1;
+grid-column-start:1;
+grid-column-end:3;
+border: 1px dashed blue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+div.caixa3{
+background-color: blue;
+font-weight: bold;
+grid-row-start:-2;
+grid-row-end:-1;
+grid-column-start:-2;
+grid-column-end:-1;
+border: 1px dashed blue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
